@@ -1,3 +1,7 @@
+use rusty_url::uuid;
+
 fn main() {
-    println!("Hello, world!");
+    for _ in 0..7 {
+        println!("{}", uuid::generate_uuid());
+    }
 }

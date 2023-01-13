@@ -1,7 +1,14 @@
-use rusty_url::uuid;
+#[macro_use] extern crate rocket;
 
-fn main() {
-    for _ in 0..7 {
-        println!("{}", uuid::generate_uuid());
-    }
+use rocket::http::Status;
+
+#[get("/")]
+fn hello() -> Result<String, Status> {
+    Ok("Hello, World!".to_string())
 }
+
+#[launch]
+fn rocket() -> rocket::Rocket<rocket::Build> {
+    rocket::build().mount("/", routes![hello])
+}
+

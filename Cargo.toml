@@ -8,4 +8,7 @@ edition = "2021"
 [dependencies]
 rand = "0.8.5"
 rocket = { version = "0.5.0-rc.2", features = ["json"] }
+schemars = "0.8.11"
+okapi = "0.7.0-rc.1"
+rocket_okapi = { version = "0.8.0-rc.2", features = ["swagger", "rapidoc"] }
 serde = "1.0.152"

@@ -6,14 +6,13 @@
 # to native line endings on checkout.
 *.rs text eol=lf
 *.toml text eol=lf
-*.frag text eol=lf
-*.vert text eol=lf
-*.wgsl text eol=lf
-*.md text eol=lf
-*.collider text eol=lf
+*.ts* text eol=lf
+*.js* text eol=lf
 .gitignore text eol=lf
 .gitattributes text eol=lf
 *.txt text eol=lf
+*.css text eol=lf
+*.html text eol=lf
 
 # Declare files that will always have CRLF line endings on checkout.
 *.sln text eol=crlf
